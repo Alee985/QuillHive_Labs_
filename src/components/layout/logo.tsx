@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import logo from "@/assets/logo.png";
 
 interface LogoProps {
   className?: string;
@@ -16,7 +17,7 @@ export function Logo({ className, variant = "dark" }: LogoProps) {
       aria-label="Quillhive home"
     >
       <Image
-        src="/logo.png"
+        src={logo}
         alt=""
         width={34}
         height={34}
